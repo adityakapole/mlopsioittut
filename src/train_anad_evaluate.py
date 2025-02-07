@@ -26,8 +26,9 @@ def train_and_evaluate(config_path):
     l1_ratio = config["estimators"]["ElasticNet"]["params"]["l1_ratio"]
 
     target = config["base"]["target_col"]
-    train = pd.read_csv("train_data_path")
-    test = pd.read_csv("test_data_path")
+    train = pd.read_csv(train_data_path)
+    test = pd.read_csv(test_data_path)
+
 
 
 
